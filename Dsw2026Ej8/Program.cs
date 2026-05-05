@@ -42,7 +42,15 @@
             Sale wholesale = new WholesaleSale(1000m);
 
             Console.WriteLine($"RetailSale de 1000:  {p5.ObtenerImporteFinal(retail)}");     
-            Console.WriteLine($"WholesaleSale de 1000:  {p5.ObtenerImporteFinal(wholesale)}");  
+            Console.WriteLine($"WholesaleSale de 1000:  {p5.ObtenerImporteFinal(wholesale)}");
+
+
+            Console.WriteLine("\nproblema6:");
+            var p6 = new Problema6();
+            Console.WriteLine(p6.NormalizarCodigoProducto(" ab 123 x ")); 
+            Console.WriteLine(p6.NormalizarCodigoProducto("  harina  ")); 
+            Console.WriteLine(p6.NormalizarCodigoProducto(null!));        
+
         }
     }
 }
