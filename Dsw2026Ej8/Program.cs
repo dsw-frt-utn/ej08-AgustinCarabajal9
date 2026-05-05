@@ -25,6 +25,15 @@
             var p3 = new Problema3();
             var product = new Product("Notebook Lenovo");
             Console.WriteLine(p3.CompararCopias(10, product));
+
+            //pruebas para el problema 4
+            Console.WriteLine("\nproblema 4:");
+            var p4 = new Problema4();
+            Console.WriteLine(p4.CalcularPromedio(8, 6, 10));    // promedio de 3 notas   → 8
+            Console.WriteLine(p4.CalcularPromedio(null, 7, 5));    // ignora null           → 6
+            Console.WriteLine(p4.CalcularPromedio(null, null, null));  // todas null            → 0
+            Console.WriteLine(p4.CalcularPromedio(-1, 5, 11));    // -1 y 11 fuera rango   → 5
+            Console.WriteLine(p4.CalcularPromedio(null, -5, null));  // nota inválida + nulls → 0
         }
     }
 }
