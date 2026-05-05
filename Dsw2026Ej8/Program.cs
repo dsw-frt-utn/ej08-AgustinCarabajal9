@@ -29,11 +29,20 @@
             //pruebas para el problema 4
             Console.WriteLine("\nproblema 4:");
             var p4 = new Problema4();
-            Console.WriteLine(p4.CalcularPromedio(8, 6, 10));    // promedio de 3 notas   → 8
-            Console.WriteLine(p4.CalcularPromedio(null, 7, 5));    // ignora null           → 6
-            Console.WriteLine(p4.CalcularPromedio(null, null, null));  // todas null            → 0
-            Console.WriteLine(p4.CalcularPromedio(-1, 5, 11));    // -1 y 11 fuera rango   → 5
-            Console.WriteLine(p4.CalcularPromedio(null, -5, null));  // nota inválida + nulls → 0
+            Console.WriteLine(p4.CalcularPromedio(8, 6, 10));    
+            Console.WriteLine(p4.CalcularPromedio(null, 7, 5));  
+            Console.WriteLine(p4.CalcularPromedio(null, null, null));  
+            Console.WriteLine(p4.CalcularPromedio(-1, 5, 11));    
+            Console.WriteLine(p4.CalcularPromedio(null, -5, null));
+
+            Console.WriteLine("\nproblema 5:");
+            var p5 = new Problema5();
+
+            Sale retail = new RetailSale(1000m);
+            Sale wholesale = new WholesaleSale(1000m);
+
+            Console.WriteLine($"RetailSale de 1000:  {p5.ObtenerImporteFinal(retail)}");     
+            Console.WriteLine($"WholesaleSale de 1000:  {p5.ObtenerImporteFinal(wholesale)}");  
         }
     }
 }
